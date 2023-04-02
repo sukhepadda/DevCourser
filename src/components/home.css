@@ -1,0 +1,22 @@
+.container{
+    height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+.vector-graphics{
+    filter: drop-shadow(0 40px 10px rgba(0, 0, 0, 0.3));
+    animation: vectorAnimation 1s infinite ease-in-out alternate;
+}
+.brandsBanner > svg{
+    color: white;
+    font-size: 3rem;
+    transition: color .5s;
+}
+.brandsBanner > svg:hover{
+    color: rgb(236,201,75);
+}
+@keyframes vectorAnimation{
+    to{
+        transform: translateY(-10px);
+    }
+}
